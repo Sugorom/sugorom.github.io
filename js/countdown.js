@@ -16,11 +16,25 @@ function Timer_for_Igor() {
   day = dateB.diff(dateC, 'day');
   
   $("#text_day").text(day);
-  $("#text_hour").text(hours);
- 
-  $("#text_minute").text(minut); 
+
+  if (hours.toString().length == 2) {
+    $("#text_hour").text(hours);
+  } else {
+    $("#text_hour").text(0 + hours.toString());
+  }
   
-  $("#text_second").text(second);
+  if (minut.toString().length == 2) {
+    $("#text_minute").text(minut);
+  } else {
+    $("#text_minute").text(0 + minut.toString());
+  }
+  
+  if (second.toString().length == 2) {
+    $("#text_second").text(second); 
+  } else {
+    $("#text_second").text(0 + second.toString()); 
+  }
+  
   setTimeout(Timer_for_Igor, 1000);
 }
 
