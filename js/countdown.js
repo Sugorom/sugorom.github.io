@@ -1,19 +1,15 @@
 var minut, hours, second, date, data, mount;
 var now;
 
-function Timer_for_Igor() {
-  var dateC = moment('October 25, 2020 0:30:00 AM');
-  var dateB = moment('Febrary 27, 2022 22:31:34 PM');
-}
 
-/*
 function Timer_for_Igor() {
 
   now = moment();
   moment.lang('ru');
 
   var dateC = moment('October 25, 2020 0:30:00 AM');
-  var dateB = moment(now.format('MMMM DD YYYY, h:mm:ss A'));
+  var dateB = moment('Febrary 27, 2022 22:31:34 PM');
+  //var dateB = moment(now.format('MMMM DD YYYY, h:mm:ss A'));
 
 
   second = dateB.diff(dateC, 'seconds')%60;
@@ -45,4 +41,3 @@ function Timer_for_Igor() {
 }
 
 setTimeout(Timer_for_Igor, 1);
-*/
