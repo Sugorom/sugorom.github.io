@@ -8,7 +8,7 @@ function Timer_for_Igor() {
   moment.lang('ru');
 
   var dateC = moment('October 25, 2020 0:30:00 AM');
-  var dateB = moment('Febrary 27, 2022 22:31:34 PM');
+  var dateB = moment('February 27, 2022 22:31:34 PM');
   //var dateB = moment(now.format('MMMM DD YYYY, h:mm:ss A'));
 
 
